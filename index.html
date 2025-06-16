@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HW Mod Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>HW Mod App Store</h1>
+    <input type="text" id="searchInput" placeholder="Search apps... 🔍" onkeyup="filterApps()">
+  </div>
+
+  <div class="app-list" id="appList">
+
+    <!-- App 1 -->
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/android-os.png" />
+      <h2>HW Tools Pro</h2>
+      <p>Premium tools unlocked for Android developers.</p>
+      <div class="info">
+        <span>⭐ 4.8</span>
+        <span>📥 120K+</span>
+      </div>
+      <a href="#" class="btn-download">Download APK</a>
+    </div>
+
+    <!-- App 2 -->
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/youtube-play.png" />
+      <h2>YT Mod+</h2>
+      <p>Ad-free YouTube experience with background play.</p>
+      <div class="info">
+        <span>⭐ 4.9</span>
+        <span>📥 300K+</span>
+      </div>
+      <a href="#" class="btn-download">Download APK</a>
+    </div>
+
+    <!-- App 3 -->
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/whatsapp.png" />
+      <h2>WA GB Pro</h2>
+      <p>Custom WhatsApp mod with privacy & themes.</p>
+      <div class="info">
+        <span>⭐ 4.7</span>
+        <span>📥 500K+</span>
+      </div>
+      <a href="#" class="btn-download">Download APK</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>© 2025 HW Mod Web. All rights reserved.</p>
+  </div>
+
+  <script>
+    function filterApps() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let cards = document.querySelectorAll(".card");
+      cards.forEach(card => {
+        let title = card.querySelector("h2").textContent.toLowerCase();
+        card.style.display = title.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netflix Mod APK Download</title>
+</head>
+<body style="background-color:black; color:white; text-align:center; font-family:sans-serif;">
+  <h1>📱 Netflix Mod APK</h1>
+  <p>🎬 No Ads | Unlimited Access | Premium Unlocked</p>
+  
+  <a href="apks/NetflixMod.apk" download>
+    <button style="padding:15px 30px; background-color:lime; color:black; font-size:16px; border:none; border-radius:5px;">
+      ⬇️ Install Now
+    </button>
+  </a>
+</body>
+</html>
